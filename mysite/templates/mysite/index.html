@@ -1,0 +1,13 @@
+{% extends 'mysite/base.html' %}
+{% load static %}
+{% block content %}
+    <a style="text-decoration: none;color: inherit" href="{% url 'category' 'android'  %}" >
+    <div class="card" style="width: 18rem;margin: 25px">
+  <img class="card-img-top" src="{% static 'mysite/images/android.png' %}" alt="Card image cap">
+
+  <div class="card-body">
+    <p class="card-text">Android Programming basics</p>
+  </div>
+</div>
+    </a>
+{% endblock %}
